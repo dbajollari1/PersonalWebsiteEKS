@@ -1,0 +1,10 @@
+img{
+    width:100%;
+    height:150px;
+}
+
+.change-color {
+    font-family:FontAwesome;
+    color:rgb(255, 255, 255);
+}
+

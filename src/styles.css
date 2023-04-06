@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    margin: 0;
+}
+body { 
+    /* width: fit-content; */
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.darkbackground {
+    background-color:#15181f;
+    color:#E9EBE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    min-height: 100vh; /* full screen */
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.lightbackground {
+    background-color:lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    min-height: 100vh; /* full screen */
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+
+h2 {
+    color:rgb(96, 130, 195);
+    padding-bottom: 20px;
+}
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    .test {
+        background-color:red;
+    }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    .test {
+        background-color:blue;
+    }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    .test {
+        background-color:yellow;
+    }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .test {
+        background-color:cyan;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    .test {
+        background-color:green;
+    }
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    .test {
+        background-color:azure;
+        min-height: 100vh;
+    }
+}

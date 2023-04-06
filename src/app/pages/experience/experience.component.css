@@ -1,0 +1,31 @@
+.resumeBody {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.2em;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px 0px 10px 0px;
+}
+
+.subheader {
+    font-weight: bold;
+    padding: 5px 0 !important; 
+}
+
+.timeperiod {
+    font-weight: normal;
+    padding: 0;
+    font-style: italic;
+    white-space: nowrap;
+}   
+
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .timeperiod {
+        padding: 5px 0;
+        float:right;
+        text-align: right;
+    }
+}

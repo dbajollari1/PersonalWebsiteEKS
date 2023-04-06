@@ -1,0 +1,21 @@
+.change-color {
+  font-family:FontAwesome;
+  color:rgb(255, 255, 255);
+}
+
+
+.image1{
+    height: 100vh;
+    background: url('../../../assets/images/background.jpg') bottom no-repeat transparent;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.mainpage {
+  min-height: 100vh;
+  min-width:auto;
+  display: grid;   /* display items in center of screen - no need for small screens */
+  align-items: center;
+  justify-content: center; 
+  overflow-wrap: break-word; 
+}
