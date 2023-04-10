@@ -14,10 +14,11 @@ ENV Mail_API_URL = "a18db8acf06f6470b81d777e99a7454d-1885751604.us-east-1.elb.am
 # Use official nginx image as the base image
 FROM nginx:latest
 
-# helps to serve the static html files (*** 404 error )
-COPY ./nginx.conf /etc/nginx/nginx.conf
 # Copy the build output to replace the default nginx contents.
 COPY --from=build /usr/local/app/dist /usr/share/nginx/html 
+# helps to serve the static html files (*** 404 error )
+COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80
 EXPOSE 80
