@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: davidswebsite
+  labels:
+    app: davidswebsite
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: davidswebsite
+  template:
+    metadata:
+      labels:
+        app: davidswebsite
+    spec:
+      containers:
+        - name: davidswebsite
+          image:004447353381.dkr.ecr.us-east-1.amazonaws.com/davidswebsite:1.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080

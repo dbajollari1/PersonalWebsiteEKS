@@ -21,7 +21,7 @@ export class ContactService {
 
     var config = {
       method: 'post',
-      url: 'https://davidemailservice.azurewebsites.net/public/email',
+      url: 'a18db8acf06f6470b81d777e99a7454d-1885751604.us-east-1.elb.amazonaws.com',
       headers: {
         'Content-Type': 'application/json'
       },

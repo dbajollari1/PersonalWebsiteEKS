@@ -9,6 +9,7 @@ COPY ./ /usr/local/app/
 RUN npm install
 # Generate the build of the application
 RUN npm run build
+ENV Mail_API_URL = "a18db8acf06f6470b81d777e99a7454d-1885751604.us-east-1.elb.amazonaws.com"
 # Stage 2: Serve app with nginx server
 # Use official nginx image as the base image
 FROM nginx:latest
