@@ -15,8 +15,8 @@ ENV Mail_API_URL = "a18db8acf06f6470b81d777e99a7454d-1885751604.us-east-1.elb.am
 
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
 FROM nginx:1.15
-#Copy ci-dashboard-dist
-COPY --from=build-stage /app/dist/ /usr/share/nginx/html
+# Copy the build output to replace the default nginx contents.
+COPY --from=build /usr/local/app/dist /usr/share/nginx/html 
 #Copy default nginx configuration
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf  
 
