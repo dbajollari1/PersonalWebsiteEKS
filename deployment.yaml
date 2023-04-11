@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: davidswebsite
-          image: 004447353381.dkr.ecr.us-east-1.amazonaws.com/davidswebsite:1.4
+          image: 004447353381.dkr.ecr.us-east-1.amazonaws.com/davidswebsite:1.5
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
